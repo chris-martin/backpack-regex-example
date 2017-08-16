@@ -2,6 +2,11 @@ name: str-string
 version: 0.1.0.0
 build-type: Simple
 cabal-version: >= 1.24
+synopsis:
+    A string library based on the 'String' type.
+description:
+    An implementation of the "Str" module signature defined by the
+    @regex-indef@ package. In this implementation, strings are 'String's.
 
 library
     build-depends: base
