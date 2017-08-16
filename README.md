@@ -1,4 +1,4 @@
-`regex-indef` is a minimal library for parsing regular expressions. It is an
+**`regex-indef`** is a minimal library for parsing regular expressions. It is an
 *indefinite* library. It defines two things:
 
 * A module named `Regex` (which contains an import of `Str`)
@@ -9,16 +9,16 @@
 Each of the following packages provides an implementation of the `Str` module
 signature:
 
-* `str-string` defines strings as `String`.
-* `str-bytestring` defines strings as `ByteString`.
+* **`str-string`** defines strings as `String`.
+* **`str-bytestring`** defines strings as `ByteString`.
 
 Then there are two empty packages, `regex-string` and `regex-bytestring`. Each
 of these packages combines `regex-indef` with a `Sig` implementation to produce
 a *definite* regular expression library.
 
-* `regex-string` depends on `regex-indef` and `str-string`, and it reexports the
+* **`regex-string`** depends on `regex-indef` and `str-string`, and it reexports the
   `Regex` module as `Regex.String`.
-* `regex-bytestring` depends on `regex-indef` and `str-bytestring`, and it
+* **`regex-bytestring`** depends on `regex-indef` and `str-bytestring`, and it
   reexports the `Regex` module as `Regex.ByteString`.
 
 ## Summary of terminology
